@@ -1,0 +1,76 @@
+* {
+    margin: 0px;
+    box-sizing: border-box;
+    text-align: center;
+    border-collapse: collapse;
+}
+
+table, tbody, tr, td, div {
+    padding: 0px;
+}
+
+td {
+    vertical-align: top;
+}
+
+.unselectable /* Make subtree elements unselectable */
+{
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+  
+  cursor: default;
+}
+
+.layout_table {
+    height: 100%;
+    max-height: 100%;
+
+    width: 100%;
+    max-width: 100%;
+}
+
+.top_level_column {
+    height: 100%;
+    max-height: 100%;
+    vertical-align: top;
+}
+
+.segment_external {
+    padding: 10px;
+
+    max-height: 100%;
+
+    width: 100%;
+    max-width: 100%;
+}
+
+.cell_border, .segment_border {
+    border: 2px solid rgba(200, 200, 200, 1);
+}
+
+.cell_border {
+    padding: 10px;
+}
+
+.segment_border {
+    padding: 0px 10px;
+
+    height: 100%;
+    max-height: 100%;
+
+    width: 100%;
+    max-width: 100%;
+}
+
+.segment_internal {
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+    margin-left: auto;
+    margin-right: auto;
+
+    max-width: 100%;
+}

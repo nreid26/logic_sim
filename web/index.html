@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+
+<html>
+	<head>
+	    <meta charset="utf-8">
+	    <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>LogicSim</title>
+	    
+	    <script async type="application/dart" src="main.dart"></script>
+	    <script async src="packages/browser/dart.js"></script>
+	    
+	    <link rel="stylesheet" href="global.css">
+	</head>
+ 
+    <body style="height:100vh;max-width:100vw;padding:10px 10px 0px 10px;overflow:auto">
+        <table class="layout_table">
+            <tr style="height:100%">
+                <td class="top_level_column" style="width:100%">
+
+                    <table class="layout_table" style="width:100%">
+                        <!-- table ensures canvas collapses-->
+                        <tr>
+                            <td style="height:100%;padding-bottom:-20px;">
+
+                                <div class="segment_external" style="height:100%">
+                                    <div class="segment_border" style="padding: 0px;overflow: hidden; position:relative">
+                                        <canvas id="simCanvas" style="outline:none;position:absolute;left:0px" tabindex="1" />
+                                    </div>
+                                </div>
+
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+
+                                <div class="segment_external">
+                                    <div id="helpBox" class="segment_border">
+                                    </div>
+                                </div>
+
+                            </td>
+                        </tr>
+                    </table>
+
+                </td>
+                <td class="top_level_column" style="padding-top:10px">
+                    <div id="rightColumnExpander" style="overflow-y:scroll; max-height:calc(100vh - 40px)">
+
+                        <div class="unselectable segment_external" style="padding-top:0px">
+                            <div class="segment_border">
+
+                                <div class="segment_internal">
+                                    <select id="selector">
+                                        <option selected id="tempOption"> Component Type </option>
+                                    </select>
+                                </div>
+
+                                <div class="segment_internal">
+                                    <table id="compTable" style="border-spacing:10px;border-collapse:separate;margin-left:auto;margin-right:auto">
+                                        <tr>
+                                            <td style="max-width:200px">
+                                                Load a file or select a component type to start.
+                                            </td>
+                                        </tr>
+                                    </table>
+                                </div>                               
+
+                            </div>
+                        </div>
+                        
+                        <div class="segment_external">
+                            <div class="segment_border">
+
+                                <div class="segment_internal">
+                                    <table class="layout_table" style="width:auto;display:inline-block">
+                                        <tr>
+                                            <td>
+                                                <input type="button" id="playStep" />
+                                            </td>
+                                            <td style="padding:0px 10px">
+                                                <input type="button" id="pauseUnpause"/>
+                                            </td>
+                                            <td>
+                                                <input type="button" id="stop" />
+                                            </td>
+                                        </tr>
+                                    </table>                                        
+                                </div>
+                                                                        
+                                <div class="segment_internal">
+                                    <input type="range" id="frequ"/>
+                                </div>
+
+                            </div>
+                        </div>
+
+                        <div class="segment_external">
+                            <div class="segment_border">
+
+                                <div class="segment_internal">
+                                    <table class="layout_table" style="width:auto;display:inline-block">
+                                        <tr>
+                                            <td>
+                                                <input id="generateJson" value="Save Circuit" type="button" style="margin-right:10px">
+                                                <a id="dummyAnchor" target="_blank" download="Circuit.sim"></a>
+                                            </td>
+                                            <td>
+                                                <input id="loadFile_button" value="Load Circuit" type="button">
+                                                <input id="loadFile_file" type="file" style="display:none">                                            
+                                            </td>
+                                        </tr>
+                                    </table>  
+                                </div>
+
+                            </div>
+                        </div>
+
+                    </div>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>

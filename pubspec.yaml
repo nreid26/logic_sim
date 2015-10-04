@@ -1,0 +1,4 @@
+name: logicsim
+description: A digital logic simulator
+dependencies:
+  browser: any

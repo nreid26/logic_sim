@@ -1,0 +1,15 @@
+{
+  "EmptyMouse": "<h3> Press play to start a simulation.  Drag a component or wire point to move it around the canvas.  Click a wire connection to pick it up.  Press the arrow keys to move the view. </h3>",
+  
+  "AdditionMouse": "<h3> Click the canvas to add an instance of this component.  Press delete to release the mouse or tab to change components. </h3>",
+  
+  "ComponentMouse": "<h3> Drop the component back to the canvas, or drag it off screen to delete it. </h3>",
+  
+  "SimulationMouse": "<h3> Click a Source component to toggle its state.  Click Unpause to have time pass automatically, or use Spacebar to run the simulation step-by-step. </h3>",
+  
+  "WireMouse": "<h3> Click an open area to place a wire point, or click a circled node to trade wires with it.  Move off the canvas to delete the held wire, or press delete to remove the most recent point. </h3>",
+  
+  "PointMouse": "<h3> Drag the point around the canvas to reposition it, or drag it off the canvas to delete it. </h3>"
+}
+  
+  
